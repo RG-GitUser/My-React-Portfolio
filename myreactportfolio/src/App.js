@@ -1,19 +1,26 @@
-// App.js
-import React from 'react';
-import Navbar from './navbar'; 
-import Header from './header';  
-import Footer from './footer';
+// Import components and pages
 
+import React from "react";
+import Navbar from './src/components/navbar'; 
+import Header from './src/components/header'; 
+import Footer from './src/components/footer';
+
+import Home from './src/pages/Home';
+import About from './src/pages/About';
+import Contact from './src/pages/Contact';
+import Portfolio from './src/pages/Portfolio';
+
+//Component functions 
 function App() {
     return (
         <div>
-            <Navbar />
-            {/* Other components or content can go here */}
             <Header />
-            {}
-            <Footer /> 
-            {}
-
+            <Navbar />
+            <Home />
+            <About />
+            <Contact />
+            <Portfolio />
+            <Footer />
         </div>
     );
 }
