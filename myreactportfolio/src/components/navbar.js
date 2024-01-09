@@ -1,3 +1,5 @@
+//Importing react to create function for Navbar 
+
 import React from 'react';
 
 function Navbar() {
