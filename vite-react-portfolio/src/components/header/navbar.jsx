@@ -1,6 +1,6 @@
 //Importing react to create function for Navbar 
 
-import React from 'react';
+// import React from 'react';
 import { Link } from "react-router-dom"; 
 
 
