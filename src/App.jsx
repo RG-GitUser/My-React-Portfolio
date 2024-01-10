@@ -12,7 +12,7 @@ function App() {
       <Router>
         <Navbar />
         <Routes>
-          <Route path="/about" component={About} />
+        <Route path="/about" element={<About />} />
           <Route path="/contact" component={Contact} />
           <Route path="/portfolio" component={Portfolio} />
         </Routes>
