@@ -1,0 +1,42 @@
+/*Stlying for the "About" section*/
+
+.about-me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+}
+
+.about-me h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.about-me p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+.about-me .profile-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+.about-me .social-links {
+    margin-top: 1rem;
+}
+
+.about-me .social-links a {
+    margin-right: 0.5rem;
+    color: #333;
+    text-decoration: none;
+}
+
+.about-me .social-links a:hover {
+    color: #007bff;
+}

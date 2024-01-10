@@ -1,9 +1,10 @@
+//About me section defined 
 
-// import React from "react";
+import "./about.css";
 
 const About = () => {
     return (
-        <section className="aboutMe">
+        <section className="about-me">
             <div>
                 <h1>About Page</h1>
                 <p>Welcome to my portfolio!</p>
