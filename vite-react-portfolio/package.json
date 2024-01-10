@@ -8,15 +8,24 @@
     "@testing-library/user-event": "^13.5.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-router-dom": "^6.21.1",
     "react-scripts": "^5.0.1",
     "web-vitals": "^2.1.4"
   },
   "devDependencies": {
-    "@babel/plugin-proposal-private-property-in-object": "7.21.11",
+    "@types/react": "^18.2.37",
+    "@types/react-dom": "^18.2.15",
+    "@vitejs/plugin-react-swc": "^3.5.0",
+    "eslint": "^8.53.0",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.4",
+    "vite": "^5.0.0",
     "cross-env": "^7.0.3"
+    
   },
   "scripts": {
-    "start": "cross-env PORT=3001 react-scripts start",
+    "dev": "cross-env PORT=3001 react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -25,7 +34,12 @@
     "extends": [
       "react-app",
       "react-app/jest"
-    ]
+    ],
+    "plugins":[
+      "react-refresh"
+    ],
+    "rules": {}
+  
   },
   "browserslist": {
     "production": [
