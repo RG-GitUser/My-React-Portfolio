@@ -7,6 +7,9 @@
     justify-content: center;
     text-align: center;
     padding: 2rem;
+    margin-top: 15px;
+    border: 5px solid  #4c94bd; 
+    border-radius: 10px 10px 10px 10px;
 }
 
 .about-me h2 {
@@ -19,24 +22,12 @@
     line-height: 1.5;
 }
 
-.about-me .profile-image {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 1rem;
+.about-me {
+    background-color: #4c94bd;
+    font-family: 'Chakra Petch', sans-serif;
+   
 }
 
-.about-me .social-links {
-    margin-top: 1rem;
-}
-
-.about-me .social-links a {
-    margin-right: 0.5rem;
-    color: #333;
-    text-decoration: none;
-}
-
-.about-me .social-links a:hover {
-    color: #007bff;
+h1 {
+    font-size: 30px;
 }
