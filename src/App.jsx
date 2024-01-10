@@ -13,8 +13,8 @@ function App() {
         <Navbar />
         <Routes>
         <Route path="/about" element={<About />} />
-          <Route path="/contact" component={Contact} />
-          <Route path="/portfolio" component={Portfolio} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/portfolio" element={<Portfolio />} />
         </Routes>
       </Router>
     </div>
