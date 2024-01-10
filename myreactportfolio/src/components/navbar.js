@@ -1,7 +1,7 @@
 //Importing react to create function for Navbar 
 
 import React from 'react';
-import { link } from "react-router-dom"; 
+import { Link } from "react-router-dom"; 
 import "../styles/index.css";
 
 
@@ -13,10 +13,10 @@ function Navbar() {
             </div>
         <nav>
             <ul>
-                <link to="/about">About</link>
-                <link to="/contact">Contact</link>
-                <link to="/">Home</link>
-                <link to="/portoflio">Portfolio</link>
+            <Link to="/about">About</Link>
+            <Link to="/contact">Contact</Link>
+                <Link to="/">Home</Link>
+                <Link to="/portoflio">Portfolio</Link>
             </ul>
         </nav>
      </div>

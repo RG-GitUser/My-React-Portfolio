@@ -10,7 +10,7 @@ function Header() {
 
     const handlePageChange = (page) => {
         setCurrentPage(page);
-    };
+    }; 
 
     // The renderPage method uses a switch statement to render the appropriate current page
     const renderPage = () => {

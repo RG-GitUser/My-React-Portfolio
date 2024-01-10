@@ -1,27 +1,26 @@
 // Import components and pages
 
 import React from "react";
-import Navbar from './src/components/navbar'; 
-import Header from './src/components/header'; 
-import Footer from './src/components/footer';
+import Navbar from '../components/navbar';
 
-import Home from './src/pages/Home';
-import About from './src/pages/About';
-import Contact from './src/pages/Contact';
-import Portfolio from './src/pages/Portfolio';
+import About from '../pages/About';
+import Contact from '../pages/Contact'; 
+import Portfolio from '../pages/Portfolio';
 
-//Component functions 
+//Function for routing pages
 function App() {
-    return (
-        <div>
-            <Header />
-            <Navbar />
-            <Home />
-            <About />
-            <Contact />
-            <Portfolio />
-            <Footer />
+    return ( 
+        <div className="App"> 
+            <Router>
+                <Navbar />  
+                <Routes>
+                 <Route path="./about" element={<About />} /> 
+                 <Route path="./contact" element={<Contact />} />  
+                 <Route path="./portfolio" element={<Portfolio/>} />
+                </Routes>
+            </Router>
         </div>
+
     );
 }
 
