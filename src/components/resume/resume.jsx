@@ -1,3 +1,5 @@
+import "./resume.css";
+
 const Resume = () => {
     return (
       // Returning JSX elements

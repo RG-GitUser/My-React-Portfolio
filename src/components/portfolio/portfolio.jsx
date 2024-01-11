@@ -1,5 +1,6 @@
 import "./portfolio.css";
 import Project from './project';
+import GoogleFontLoader from 'react-google-font-loader';
 
 
 const projects = [
@@ -43,22 +44,35 @@ const projects = [
   },
 ];
   
+
+
 const Portfolio = () => {
     return (
-      <section className="portfolio">
-        <h2>My Portfolio</h2>
-        <div className="portfolio-items">
-          {projects.map((project, index) => (
-            <Project
-              key={index}
-              title={project.title}
-              image={project.image}
-              deployLink={project.deployLink}
-              githubLink={project.githubLink}
-            />
-          ))}
-        </div>
-      </section>
+      <div className="contact-form-container">
+        <GoogleFontLoader
+          fonts={[
+            {
+              font: 'Chakra Petch',
+              weights: [500, '500i'],
+            },
+          ]}
+        />
+  
+        <section className="portfolio">
+          <h2>My Portfolio</h2>
+          <div className="portfolio-items">
+            {projects.map((project, index) => (
+              <Project
+                key={index}
+                title={project.title}
+                image={project.image}
+                deployLink={project.deployLink}
+                githubLink={project.githubLink}
+              />
+            ))}
+          </div>
+        </section>
+      </div>
     );
   };
   
