@@ -12,9 +12,7 @@ function Navbar() {
             <button> </button>
             </div>
         <nav>
-            <div className="myHome">
-                 <Link to="/">Riley Gaffney</Link>  
-            </div>
+            <div className="myHome">Riley Gaffney</div>
 
             <ul>
             <Link to="/about">About</Link>

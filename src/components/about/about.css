@@ -1,5 +1,12 @@
 /*Stlying for the "About" section*/
 
+.rounded-image {
+    margin-right: -225px;
+    height: 50px;
+}
+
+
+
 .about-me {
     display: flex;
     flex-direction: column;
@@ -7,7 +14,7 @@
     justify-content: center;
     text-align: center;
     padding: 2rem;
-    margin-top: 15px;
+    margin-top: 5px;
     border: 5px solid  #4c94bd; 
     border-radius: 10px 10px 10px 10px;
 }
