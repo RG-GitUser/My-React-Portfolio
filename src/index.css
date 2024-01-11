@@ -86,3 +86,12 @@ a {
     display: flex;
   }
 }
+
+/* Styles for screens larger than 768px */
+@media (min-width: 768px) {
+  /* Add styles for the common elements */
+  header {
+    height: 80px;
+    background-color: #f1f1f1;
+    /* Add other styles as needed */
+  }};
