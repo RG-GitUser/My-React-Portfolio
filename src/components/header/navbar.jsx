@@ -18,6 +18,7 @@ function Navbar() {
             <Link to="/about">About</Link>
             <Link to="/contact">Contact</Link>
             <Link to="/portoflio">Portfolio</Link>
+            <Link to="/resume">Resume</Link>
             </ul>
         </nav>
      </div>
