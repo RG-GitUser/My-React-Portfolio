@@ -1,6 +1,7 @@
 /*index.html stlyes*/
 html {
   background-color: #EFE9F4;
+  scroll-behavior: smooth; /* Smooth scrolling for links */
 }
 
 /* Navbar.css */
