@@ -1,5 +1,7 @@
 import { useState } from 'react';
 import './contact.css'; // Import your CSS file for styling
+import GoogleFontLoader from 'react-google-font-loader';
+
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -24,6 +26,15 @@ const ContactForm = () => {
 
   return (
     <div className="contact-form-container">
+        <GoogleFontLoader
+                        fonts={[
+                            {
+                                font:'Chakra Petch',
+                                weights: [500, '500i'],
+                            },
+                        ]}
+                        />
+
       <h2>Contact Us</h2>
       <form onSubmit={handleSubmit}>
         <div className="form-group">
@@ -64,6 +75,7 @@ const ContactForm = () => {
 
         <div className="form-group">
           <button type="submit">Submit</button>
+          
         </div>
       </form>
     </div>

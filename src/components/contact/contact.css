@@ -1,6 +1,6 @@
 /* ContactForm.css */
 
-.container {
+.container { 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,6 +15,9 @@
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+   font-family: Chakra Petch;
+   margin-left: 750px;
+   margin-top: 20px;
   }
   
   .form-group {
