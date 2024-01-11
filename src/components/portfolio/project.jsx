@@ -1,67 +1,33 @@
 
 //logic for implementing projects
 
-const projects = [
-    {
-      title: 'Weaher Dashboard',
-      image: './images/weatherDashboard.png',
-      deployLink: 'https://rg-gituser.github.io/Weather-Dashboard/',
-      githubLink: 'https://github.com/RG-GitUser/Weather-Dashboard',
-    },
-    {
-      title: 'Project 2',
-      image: 'project2.png',
-      deployLink: 'https://example.com/project2',
-      githubLink: 'https://github.com/example/project2',
-    },
-   {
-    title: 'Project 2',
-    image: 'project2.png',
-    deployLink: 'https://example.com/project2',
-    githubLink: 'https://github.com/example/project2',
-  },
-   {
+import PropTypes from 'prop-types';
+import './portfolio.css';
 
-    title: 'Project 2',
-      image: 'project2.png',
-      deployLink: 'https://example.com/project2',
-      githubLink: 'https://github.com/example/project2',
-    },
-
-    {
-    title: 'Project 2',
-    image: 'project2.png',
-    deployLink: 'https://example.com/project2',
-    githubLink: 'https://github.com/example/project2',
-  },
-  {
-    title: 'Project 2',
-    image: 'project2.png',
-    deployLink: 'https://example.com/project2',
-    githubLink: 'https://github.com/example/project2',
-  },
-];
-  
-  const Project = () => {
-    return (
-      <section id="portfolio">
-        <h2>Portfolio</h2>
-        <div className="project-list">
-          {projects.map((project, index) => (
-            <div key={index} className="project-item">
-              <img src={project.image} alt={project.title} />
-              <div className="project-details">
-                <h3>{project.title}</h3>
-                <div className="project-links">
-                  <a href={project.deployLink} target="_blank" rel="noopener noreferrer">Deployed App</a>
-                  <a href={project.githubLink} target="_blank" rel="noopener noreferrer">GitHub Repository</a>
-                </div>
-              </div>
-            </div>
-          ))}
+const Project = ({ title, image, deployLink, githubLink }) => {
+  return (
+    <div className="project-item">
+      <img src={image} alt={title} />
+      <div className="project-details">
+        <h3>{title}</h3>
+        <div className="project-links">
+          <a href={deployLink} target="_blank" rel="noopener noreferrer">
+            Deployed App
+          </a>
+          <a href={githubLink} target="_blank" rel="noopener noreferrer">
+            GitHub Repository
+          </a>
         </div>
-      </section>
-    );
-  };
-  
-  export default Project;
+      </div>
+    </div>
+  );
+};
+
+Project.propTypes = {
+  title: PropTypes.string.isRequired,
+  image: PropTypes.string.isRequired,
+  deployLink: PropTypes.string.isRequired,
+  githubLink: PropTypes.string.isRequired,
+};
+
+export default Project;

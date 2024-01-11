@@ -17,6 +17,7 @@ html {
   border: 10px solid #333;
   border-color: #EE6C4D;
   border-radius: 20px 20px 40px 40px;
+  
 }
 
 .togglebutton {
@@ -63,6 +64,7 @@ a {
     background-color: #333;
     padding: 10px;
     display: none;
+    position: fixed;
   }
 
   ul.show {

@@ -15,9 +15,9 @@ function Navbar() {
             <div className="myHome">Riley Gaffney</div>
 
             <ul>
-            <Link to="/about">About</Link>
+            <Link to="/">About</Link>
             <Link to="/contact">Contact</Link>
-            <Link to="/portoflio">Portfolio</Link>
+            <Link to="/portfolio">Portfolio</Link>
             <Link to="/resume">Resume</Link>
             </ul>
         </nav>
