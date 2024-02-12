@@ -1,21 +1,13 @@
 //About me section defined 
 
 import "./about.css";
-import GoogleFontLoader from 'react-google-font-loader';
+
 
 const About = () => {
     return (
         <section className="about-me">
             <div className="rounded-image"> <img src="./images/selfie.png" alt="About Me" /></div>
                 <div>
-                    <GoogleFontLoader
-                        fonts={[
-                            {
-                                font: 'Chakra Petch',
-                                weights: [500, '500i'],
-                            },
-                        ]}
-                    />
 
                     <h1>About Me</h1>
                     <p>My name is Riley Gaffney and I am currently a student in the Fullstack Web Development boot-camp.

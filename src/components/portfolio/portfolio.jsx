@@ -1,6 +1,6 @@
 import "./portfolio.css";
 import Project from './project';
-import GoogleFontLoader from 'react-google-font-loader';
+
 
 
 const projects = [
@@ -49,14 +49,6 @@ const projects = [
 const Portfolio = () => {
     return (
       <div className="contact-form-container">
-        <GoogleFontLoader
-          fonts={[
-            {
-              font: 'Chakra Petch',
-              weights: [500, '500i'],
-            },
-          ]}
-        />
   
         <section className="portfolio">
           <h2>My Portfolio</h2>

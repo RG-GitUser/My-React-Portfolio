@@ -1,3 +1,8 @@
+/*Tailwind load*/
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 /*index.html stlyes*/
 
 .container {
