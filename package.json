@@ -9,7 +9,7 @@
         "@testing-library/user-event": "^13.5.0",
         "@vitejs/plugin-react-swc": "^3.5.0",
         "google-fonts-loader": "",
-        "joi": "^17.12.1",
+        "joi": "^17.12.2",
         "react": "^18.2.0",
         "react-dom": "^18.2.0",
         "react-gfl": "^1.1.1",
